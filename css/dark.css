@@ -1,0 +1,30 @@
+body {
+  background-color: #2D2E31;
+  color: #fff;
+ }
+
+ nav {
+   background-color: #191C20;
+   border-left: 1.5px solid rgba(255, 255, 255, 0.2);
+ }
+
+ hr {color: rgba(255, 255, 255, 0.0);}
+
+ nav .list {color: rgb(163, 163, 163);}
+ nav .list ul li a:hover, nav .list ul li a.active {color: white}
+
+ main header {background-color: #000000; border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);}
+
+ main section.content .info .part .contents {background-color: #191C20; box-shadow: 0px 0px 9px 0px rgba(255,255,255,0.1);}
+
+ main section.content .hideable {background-color: #191C20;}
+
+ main section.content .hideable tbody tr:nth-of-type(odd) {
+     background-color: rgba(255,255,255,.05);
+ }
+
+ main section.content .hideable table, main section.content .hideable td, main section.content .hideable th {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ main section.content .hideable button { color:white; border: 1px solid rgba(255, 255, 255, 0.2);}

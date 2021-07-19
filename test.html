@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>مسافات لإدارة المشاريع - خاص</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="icon" href="imgs/icon.png">
+    <!--[if lt IE 9]-->
+    <script src="js\html5shiv.min.js"></script>
+    <!--[endif]-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="body">
+    <nav class="float-right whitebg">
+      <section class="top text-center">
+        <img src="imgs/logo.png" alt="logo" onmouseover="animateCSS('#logo', 'rubberBand')" id="logo" >
+        <h3 onmouseover="animateCSS('#title', 'pulse')" id="title">مسافات لإدارة المشاريع</h3>
+
+        <form action="index.html" method="post">
+          <label class="switch" >
+            <input type="checkbox" onclick="theme();" id="ThemCheckbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </form>
+      </section>
+
+      <hr>
+
+      <section class="list">
+        <ul>
+          <li> <i class="far fa-list-alt nav" style="padding-left: 10px"></i> <a class="nav" id="missionsb" onclick="sections('missions');" onmouseover="animateCSS('#missionsb','fadeInLeft');">المهام</a> </li>
+          <li> <i class="fas fa-users nav" style="padding-left: 10px"></i> <a class="nav" id="membersb" onclick="sections('members');" onmouseover="animateCSS('#membersb','fadeInLeft');">الأعضاء</a> </li>
+          <li> <i class="fas fa-gavel nav" style="padding-left: 10px"></i> <a class="nav" id="missionsmanagementb" onclick="sections('missionsmanagement');" onmouseover="animateCSS('#missionsmanagementb','fadeInLeft');">إدارة المهام</a> </li>
+          <li> <i class="fas fa-briefcase nav" style="padding-left: 10px"></i> <a class="nav" id="membersmanagementb" onclick="sections('membersmanagement');" onmouseover="animateCSS('#membersmanagementb','fadeInLeft');">إدارة الأعضاء</a> </li>
+          <li> <i class="fas fa-envelope-square nav" style="padding-left: 10px"></i> <a class="nav" id="logb" onclick="sections('log');" onmouseover="animateCSS('#logb','fadeInLeft');">السجل</a> </li>
+          <li> <i class="fas fa-hand-holding-usd nav" style="padding-left: 10px"></i> <a class="nav" id="paymentsb" onclick="sections('payments');" onmouseover="animateCSS('#paymentsb','fadeInLeft');">الخزنة الدولية</a> </li>
+          <li> <i class="fas fa-power-off nav" style="padding-left: 10px"></i> <a>تسجيل خروج</a> </li>
+        </ul>
+      </section>
+    </nav>
+
+    <main class="float-left">
+      <header class="whitebg text-center">
+        <div style="width:100%; font-weight:bold">Made With <span style="color:red"><i class="fas fa-heart"></i></span> By MASAFAT</div>
+      </header>
+
+      <section class="content">
+        <section class="info text-right">
+          <div class="part float-right" id="part0">
+            <div class="contents whitebg">
+              <h3><i class="fas fa-headset"></i> المنصب الحالي:</h3>
+              <h4 style="color:rgb(76, 175, 80);"><i class="fas fa-arrow-left"></i> الرئبس التنفيذي</h4>
+            </div>
+          </div>
+          <div class="part float-right" id="part1">
+            <div class="contents whitebg">
+              <h3><i class="fas fa-list-alt"></i> المهام الحالية:</h3>
+              <h4 style="color:rgb(244, 67, 54);"><i class="fas fa-arrow-left"></i> 2 مهمة</h4>
+            </div>
+          </div>
+          <div class="part float-right" id="part2">
+            <div class="contents whitebg">
+              <h3><i class="fas fa-user"></i> المسؤول عنك:</h3>
+              <h4 style="color:rgb(156, 39, 176);"><i class="fas fa-arrow-left"></i> الرئيس (ش. ج)</h4>
+            </div>
+          </div>
+          <div class="part float-right" id="part3">
+            <div class="contents whitebg">
+              <h3><i class="fas fa-wallet"></i> المحفظة:</h3>
+              <h4 style="color:rgb(33, 150, 243);"><i class="fas fa-arrow-left"></i> 0$</h4>
+            </div>
+          </div>
+        </section>
+        <div class="clearFix"></div>
+
+        <section class="hideable text-center whitebg" id="missions">
+          <h2>المهام</h2>
+          <button type="button" name="refreshMissions" class="float-left">تحديث البيانات</button>
+          <div class="clearFix"></div>
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>م.</th>
+                <th>المهمة</th>
+                <th>موعد التسليم</th>
+                <th>المسؤول</th>
+                <th>تم تحريرها</th>
+                <th>المبلغ المستحق</th>
+                <th>تفاصيل</th>
+                <th>تحكم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>تصميم الموقع</td>
+                <td>5 أيام</td>
+                <td>حسن الشمري</td>
+                <td>قبل 10 دقائق</td>
+                <td>10$</td>
+                <td>إنقر هنا</td>
+                <td>عناصر التحكم</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>تصميم تطبيق</td>
+                <td>10 أيام</td>
+                <td>احمد بلفقيه</td>
+                <td>قبل 30 دقائق</td>
+                <td>15$</td>
+                <td>إنقر هنا</td>
+                <td>عناصر التحكم</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+
+        <section class="hideable text-center whitebg" id="members">
+          <h2>الأعضاء</h2>
+          <!-- <button type="button" name="refreshMembers" class="float-left">تحديث البيانات</button> -->
+          <div class="clearFix"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>العضو</th>
+                <th>التخصص</th>
+                <th>تليقرام</th>
+                <th>معلومات</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>حسن الشمري</td>
+                <td>مدير تنفيذي</td>
+                <td>@Katyusha_MASAFAT</td>
+                <td> <span>إنقر هنا</span> </td>
+              </tr>
+              <tr>
+                <td>عبدالرحمن شحار</td>
+                <td>مدير المالية</td>
+                <td>@ikiller187</td>
+                <td> <span>إنقر هنا</span> </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+
+        <section class="hideable text-center whitebg" id="missionsmanagement">
+          <h2>إدارة المهام</h2>
+          <!-- <button type="button" name="refreshMissionsManagement" class="float-left">تحديث البيانات</button> -->
+          <div class="clearFix"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>م.</th>
+                <th>المهمة</th>
+                <th>موعد التسليم</th>
+                <th>المسؤول</th>
+                <th>تم تحريرها</th>
+                <th>المبلغ المستحق</th>
+                <td>تفاصيل</td>
+                <th>تحكم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <for1m class="" action="index.html" method="post">
+                <tr>
+                  <td> / </td>
+                  <td> <input type="missionsName" name=""> </td>
+                  <td> <input type="missionsDate" name=""> </td>
+                  <td> <select>
+                        <option value="ahmed">احمد</option>
+                        <option value="programmer">مبرمج</option>
+                      </select>
+                  </td>
+                  <td> / </td>
+                  <td> <input type="missionsMoney" name=""> </td>
+                  <td> <textarea name="missionsDetails"></textarea> </td>
+                  <td> <input type="submit" name="submitMission" value="إرسال"> </td>
+                </tr>
+              </form>
+              <tr>
+                <td>2</td>
+                <td>تصميم تطبيق</td>
+                <td>10 أيام</td>
+                <td>احمد بلفقيه</td>
+                <td>قبل 30 دقائق</td>
+                <td>15$</td>
+                <td>إنقر هنا</td>
+                <td>عناصر التحكم</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+
+        <section class="hideable text-center whitebg" id="membersmanagement">
+          <h2>إدارة الأعضاء</h2>
+          <!-- <button type="button" name="refreshMembersManagement" class="float-left">تحديث البيانات</button> -->
+          <div class="clearFix"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>العضو</th>
+                <th>التخصص</th>
+                <th>تليقرام</th>
+                <th>معلومات</th>
+                <th>تحكم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td> <input type="membersName" name=""> </td>
+                <td> <select>
+                      <option value="designer">مصمم</option>
+                      <option value="programmer">مبرمج</option>
+                    </select> </td>
+                <td> <input type="missionsDate" name=""> </td>
+                <td> <textarea name="missionsDetails"></textarea> </td>
+
+                <td> <input type="submit" name="submitMission" value="إرسال"> </td>
+              </tr>
+              <tr>
+                <td>حسن الشمري</td>
+                <td>مدير تنفيذي</td>
+                <td>@Katyusha_MASAFAT</td>
+                <td> <span>إنقر هنا</span> </td>
+                <td> عناصر تحكم </td>
+              </tr>
+              <tr>
+                <td>عبدالرحمن شحار</td>
+                <td>مدير المالية</td>
+                <td>@ikiller187</td>
+                <td> <span>إنقر هنا</span> </td>
+                <td> عناصر تحكم </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="hideable text-center whitebg" id="log">
+          <h2>السجل</h2>
+          <!-- <button type="button" name="refreshLog" class="float-left">تحديث البيانات</button> -->
+          <div class="clearFix"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>م.</th>
+                <th>النوع</th>
+                <th>الإسم</th>
+                <th>الفعل</th>
+                <th>الوقت</th>
+                <th>تحكم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>معلومة</td>
+                <td>حسن</td>
+                <td>تسجيل خروج</td>
+                <td>الوقت هنا</td>
+                <td>عناصر التحكم</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>خلل</td>
+                <td>عمر</td>
+                <td>تسجيل دخول</td>
+                <td>الوقت هنا</td>
+                <td>عناصر التحكم</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+
+        <section class="hideable text-center whitebg" id="payments">
+          <h2>الخزنة الدولية</h2>
+          <!-- <button type="button" name="refreshPayments" class="float-left">تحديث البيانات</button> -->
+          <div class="clearFix"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>العضو</th>
+                <th>التخصص</th>
+                <th>تليقرام</th>
+                <th>معلومات</th>
+                <th>المستحقات المالية</th>
+                <th>عناصر تحكم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><select>
+                      <option value="designer">حسن</option>
+                      <option value="programmer">عبدالرحمن </option>
+                    </select></td>
+                <td>مدير تنفيذي</td>
+                <td>@Katyusha_MASAFAT</td>
+                <td> <span>إنقر هنا</span> </td>
+                <td> <input type="number" name="money" value="40"> </td>
+                <td> عناصر تحكم </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
